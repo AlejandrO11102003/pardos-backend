@@ -1,0 +1,10 @@
+GET  http://localhost:8080/api/reports/governance
+
+//---//
+//
+
+GET http://localhost:8080/api/reports/sales-by-day
+
+//---//
+
+GET http://localhost:8080/api/reports/top-products
