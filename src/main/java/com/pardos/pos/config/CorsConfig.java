@@ -12,11 +12,13 @@ public class CorsConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/**")
-                    
-                    .allowedOrigins("http://localhost:5173", "https://52a685a7bd4e.ngrok-free.app")
-                    .allowedOriginPatterns("https://*.ngrok-free.app", "https://*.devtunnels.ms", "https://*.brs.devtunnels.ms", "https://*.loca.lt", "https://*.trycloudflare.com", "http://localhost:5173")
-                    .allowedOriginPatterns("*")
+                registry.addMapping("/**") 
+                    .allowedOriginPatterns(
+                        "https://pardoschicken.netlify.app", 
+                        "http://localhost:5173",             
+                        "https://*.onrender.com",            
+                        "*"                                 
+                    )
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                     .allowedHeaders("*")
                     .allowCredentials(true);
