@@ -15,3 +15,6 @@ INSERT INTO tables (id, number, capacity, status, current_order_id) VALUES
 (1,1,2,'available', NULL),(2,2,2,'available', NULL),(3,3,2,'available', NULL),(4,4,2,'available', NULL),
 (5,5,4,'available', NULL),(6,6,4,'available', NULL),(7,7,4,'available', NULL),(8,8,4,'available', NULL),
 (9,9,6,'available', NULL),(10,10,6,'available', NULL),(11,11,6,'available', NULL),(12,12,6,'available', NULL);
+
+-- Admin user (password: 123456)
+INSERT INTO users (username, password, name, role) VALUES ('AlejandroP', '123456', 'admin', 'admin');
